@@ -15,7 +15,8 @@ self-pruning-neural-network/
 ├── results/            # (Generated) CSV logs, Matplotlib plots, and best model checkpoints
 ├── data/               # (Generated) CIFAR-10 dataset downloads
 ├── src/
-│   └── self_pruning_nn.py # Main script: Contains PrunableLinear, SelfPruningMLP, and the training loop
+│   ├── self_pruning_nn.py    # Main script: Contains PrunableLinear, SelfPruningMLP, and the training loop
+│   └── selfpruningnn.ipynb   # Interactive Jupyter Notebook version of the self-pruning implementation
 ├── requirements.txt    # Python dependencies
 ├── report.md           # Final report containing mathematical intuition and experiment analysis
 └── README.md           # Execution instructions (this file)
