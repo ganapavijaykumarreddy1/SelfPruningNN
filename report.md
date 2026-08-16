@@ -35,9 +35,7 @@ $$
 The sparsity term contributes the gradient:
 
 $$
-\frac{\partial L_{\text{sparsity}}}{\partial S}
-=
-\lambda \sigma(S)(1-\sigma(S))
+\frac{\partial L_{\text{sparsity}}}{\partial S} = \lambda \sigma(S)(1-\sigma(S))
 $$
 
 This gradient is positive, so gradient descent applies a negative update to the gate score $S$. As a result, gates that are not sufficiently useful for classification are pushed toward smaller values.
