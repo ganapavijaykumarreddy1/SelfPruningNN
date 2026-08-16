@@ -14,7 +14,8 @@ This is achieved by introducing a learnable "gate" parameter for every weight in
 self-pruning-neural-network/
 ├── results/            # (Generated) CSV logs, Matplotlib plots, and best model checkpoints
 ├── data/               # (Generated) CIFAR-10 dataset downloads
-├── self_pruning_nn.py  # Main script: Contains PrunableLinear, SelfPruningMLP, and the training loop
+├── src/
+│   └── self_pruning_nn.py # Main script: Contains PrunableLinear, SelfPruningMLP, and the training loop
 ├── requirements.txt    # Python dependencies
 ├── report.md           # Final report containing mathematical intuition and experiment analysis
 └── README.md           # Execution instructions (this file)
@@ -29,9 +30,9 @@ self-pruning-neural-network/
    ```
 
 2. **Run the Experiment Sweep**:
-   Execute the `self_pruning_nn.py` script. This script will download CIFAR-10 (if not present), train the model under different sparsity trade-off values ($\lambda$), evaluate hard and soft pruning accuracy, and generate plots.
+   Execute the `self_pruning_nn.py` script from the `src` directory. This script will download CIFAR-10 (if not present), train the model under different sparsity trade-off values ($\lambda$), evaluate hard and soft pruning accuracy, and generate plots.
    ```bash
-   python self_pruning_nn.py
+   python src/self_pruning_nn.py
    ```
 
 3. **View Results**:
